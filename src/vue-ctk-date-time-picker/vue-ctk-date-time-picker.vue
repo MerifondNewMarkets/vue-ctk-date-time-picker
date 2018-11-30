@@ -39,7 +39,7 @@
       v-if="overlay && isVisible && !inline"
       :class="{'has-background': overlayBackground}"
       class="time-picker-overlay"
-      @click.stop="unFocus"
+      @click.stop="cancel"
     />
     <ctk-date-picker-agenda
       v-if="!rangeMode"
